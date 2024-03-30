@@ -15,12 +15,14 @@ jobs:
 
       - name: Install pytest and flake8
         run: |
+          echo "Installing pytest and flake8"
           pip install pytest
           pip install flake8
 
-      - name: Run tests with file_test.py
+      - name: Run tests
         run: |
-          pytest file_test.py
+          echo "Running tests"
+          pytest
 
       - name: Run flake8
         uses: py-actions/flake8@v2
