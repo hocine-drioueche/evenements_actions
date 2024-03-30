@@ -21,6 +21,9 @@ jobs:
       - name: Run tests
         run: |
           pytest
+      - name: Run tests with file_test.py
+        run: |
+          pytest file_test.py
 
       - name: Run flake8
         uses: py-actions/flake8@v2
